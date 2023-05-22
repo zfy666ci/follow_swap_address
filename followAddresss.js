@@ -33,7 +33,7 @@ emitter.on("txPool", async (transaction) => {
     const contract = transaction?.contractCall?.params?.path[1];
     const sendValue = web3.utils.fromWei(value, "ether");
     const mysendValue = formatRoundNum(sendValue * 1 * config["Purchase proportion"],'6') 
-    console.log(mysendValue, "我发送的金额",sendValue,'对吗发送的');
+
 
     let amounout = await limit( web3.utils.toWei(mysendValue.toString(),'ether'), contract);
     let nonce = await web3.eth.getTransactionCount(config.myaddress, "pending");
