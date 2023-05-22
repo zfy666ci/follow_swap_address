@@ -1,0 +1,10 @@
+{
+    "rpc": "https://rpc.ankr.com/eth",
+    "apikey": "",
+    "followAddress": "",
+    "Purchase proportion": "0.5",
+    "Slippage": 5,
+    "myaddress":"",
+    "private":""
+
+}
